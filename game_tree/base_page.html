@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill Tree</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="skill-tree">
+    <svg class="connections" xmlns="http://www.w3.org/2000/svg"></svg>
+    <div class="node" id="base-node" onclick="unlockBase('base-node','node1','node2','node3','node4','node5')" >BASE</div>
+    <div class="node locked" id="node1" onclick="unlockNode('node1','node11')">LEVEL 1</div>
+    <div class="node locked" id="node11" onclick="unlockNode('node11','node12')">LEVEL 2</div>
+    <div class="node locked" id="node12" onclick="unlockNode('node12','node13')">LEVEL 3</div>
+
+    <div class="node locked" id="node2" onclick="unlockNode('node2','node21')">LEVEL 1</div>
+    <div class="node locked" id="node21" onclick="unlockNode('node21','node22')">LEVEL 2</div>
+    <div class="node locked" id="node22" onclick="unlockNode('node22','node23')">LEVEL 3</div>
+
+    <div class="node locked" id="node3" onclick="unlockNode('node3','node31')">LEVEL 1</div>
+    <div class="node locked" id="node31" onclick="unlockNode('node31','node32')">LEVEL 2</div>
+    <div class="node locked" id="node32" onclick="unlockNode('node32','node33')">LEVEL 3</div>
+
+    <div class="node locked" id="node4" onclick="unlockNode('node4','node41')">LEVEL 1</div>
+    <div class="node locked" id="node41" onclick="unlockNode('node41','node42')">LEVEL 2</div>
+    <div class="node locked" id="node42" onclick="unlockNode('node42','node43')">LEVEL 3</div>
+
+    <div class="node locked" id="node5" onclick="unlockNode('node5','node51')">LEVEL 1</div>
+    <div class="node locked" id="node51" onclick="unlockNode('node51','node52')">LEVEL 2</div>
+    <div class="node locked" id="node52" onclick="unlockNode('node52','node53')">LEVEL 3</div>
+
+    <div class="node locked" id="node6" onclick="unlockNode('node6','node61')">LEVEL 1</div>
+    <div class="node locked" id="node61" onclick="unlockNode('node61','node62')">LEVEL 2</div>
+    <div class="node locked" id="node62" onclick="unlockNode('node62','node63')">LEVEL 3</div>
+
+    <div class="node locked" id="node8">winner</div>
+    <!-- Add more nodes as needed -->
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
